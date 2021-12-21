@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+
+{% block title %}
+Галерея
+{% endblock %}
+
+{% block link %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Galery.css') }}">
+{% endblock %}
+
+{% block body %}
+
+  <table style="width:80%" align="center">
+
+    <tr>
+      <td align="center"><img class="img" src="{{ url_for('static', filename='Galery/1.jpg') }}" width="70%"><br></td>
+      <td></td>
+      <td align="center"><img class="img" src="{{ url_for('static', filename='Galery/2.jpg') }}" width="90%"><br></td>
+    </tr>
+
+    <tr>
+      <td align="center"><img class="img" src="{{ url_for('static', filename='Galery/3.jpg') }}" width="90%"><br></td>
+      <td align="center"><img class="img" src="{{ url_for('static', filename='Galery/4.jpg') }}" width="90%"><br></td>
+      <td align="center"><img class="img" src="{{ url_for('static', filename='Galery/5.jpg') }}"><br></td>
+    </tr>
+
+  </table>
+
+{% endblock %}

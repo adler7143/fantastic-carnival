@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% block link %} {% endblock %}
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+
+    <center>
+        <table class="table">
+          <tr>
+
+            <th>
+                <a href='/' >
+                    <img class="Home" src="{{ url_for('static', filename='Home_2.png') }}" width="6%">
+                </a>
+            </th>
+
+            <th>
+                <a href='/gal'>
+                    <img class="Gallery" src="{{ url_for('static', filename='Galery.png') }}" width="6%">
+                </a>
+            </th>
+
+           </tr>
+        </table>
+    </center>
+
+    {% block body %} {% endblock %}
+
+    <span class="Links">
+
+        <a href="https://vk.com/tvoy_bratok_s_rayona" target="_blank">
+            <img class="icon" src = "{{url_for('static', filename='vk_ikonka.png')}}" width="10%">
+        </a>
+
+        <a href="mailto:orelandrej26@gmail.com">
+            <img class="icon" src = "{{url_for('static', filename='ikonka_mail.png')}}" width="10%">
+        </a>
+
+    </span>
+
+</body>
+</html>

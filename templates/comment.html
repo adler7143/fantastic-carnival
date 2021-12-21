@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <style>
+        form{
+            outline-color: red;
+            {outline-style: solid;
+            }
+    </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/comment.css') }}">
+</head>
+<body>
+    <form method="POST">
+
+        <label>Name:</label><br>
+            <input type="text" id="name" name="name" value="{{ request.form['name'] }}"><br>
+
+        <label>Comment:</label><br>
+            <textarea name="comment" id="comment" value="{{ request.form['comment'] }}" rows="5" cols="50"></textarea><br><br>
+
+        <button type="submit" value="Submit">Comit</button>
+    </form>
+
+    <div>
+        {% for post in posts %}
+            <h2>{{ post['name'] }}</h2>
+            <span>{{ post['comment'] }}</span>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
