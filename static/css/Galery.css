@@ -1,0 +1,17 @@
+body{
+    background-image: url("../BackGround2.png")
+}
+
+.img{
+    opacity: 0.8;
+    transition-duration: 0.5s;
+}
+
+.img:hover{
+    opacity: 1;
+}
+
+td{
+    height: 350px;
+}
+

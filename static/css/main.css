@@ -1,0 +1,51 @@
+body{
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.table{
+    position: fixed;
+    top: 10px;
+    left: 46%;
+    opacity: 0.8;
+    min-width: 500px;
+}
+
+.Home{
+    transition-duration: 1.5s;
+}
+
+.Gallery{
+    opacity: 0.7;
+    transition-duration: 1s;
+}
+
+.Home:hover, .Gallery:hover{
+    filter: hue-rotate(80deg);
+    opacity: 100;
+}
+
+th{
+    display: inline;
+    font-size: 25px;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: rgb(225, 225, 225);
+}
+
+.icon{
+    opacity:0.5;
+    transition-duration 3s;
+}
+
+.icon:hover {
+   opacity: 1;
+}
+
+.Links{
+    position: fixed;
+    bottom: 0;
+    left: 43.9%;
+}
