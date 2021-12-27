@@ -2,3 +2,27 @@ textarea{
     width:40%;
     height:100px
 }
+.Bord_com{
+    width: 35%;
+    border-radius: 5px;
+    padding: 14px 16px 4px;
+    box-shadow: 0 0 5px rgba(180,180,180,0.5);
+}
+
+.Bord_v_com_name, .Bord_v_com_Comment{
+    width:18%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgb(180 180 180 / 50%);
+    margin: 5px;
+}
+
+.Bord_v_com_Comment{
+    width:97%;
+}
+
+.button{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
