@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <style>
+        form{
+            outline-color: red;
+            {outline-style: solid;
+            }
+    </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/comment.css') }}">
+</head>
+<body>
+    <form method="POST" class="Bord_com">
+
+        <h2>Здесь вы можете оставить свой коменнтарий:</h2>
+
+        <label>Name:</label><br>
+            <input class="Bord_v_com_name"  type="text" id="name" name="name" value="{{ request.form['name'] }}"><br>
+
+        <label>Comment:</label><br>
+            <textarea class="Bord_v_com_Comment"  name="comment" id="comment" value="{{ request.form['comment'] }}"></textarea>
+
+        <button class="button" type="submit" value="Submit">Comit</button>
+    </form>
+
+  {% if posts%}
+    <div class="Bord_com">
+        {% for post in posts %}
+            <h2>{{ post['name'] }}</h2>
+            <span>{{ post['comment'] }}</span>
+        {% endfor %}
+    </div>
+  {%endif%}
+
+</body>
+</html>
